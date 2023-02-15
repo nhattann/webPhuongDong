@@ -61,3 +61,46 @@ html{
 .special .swiper-wrapper .swiper-slide-next ul{
     color: #454545;
 }
+.feeling .swiper-wrapper .swiper-slide-active div{
+    background-color: white;
+}
+.doctorN1:hover > .doctorN2{
+    height: 246px;
+}
+.questionleft{
+    justify-content: flex-start;
+}
+.questionleft1{
+    order: 1;
+}
+.questionleft1::after{
+    border: 40px;
+    border-top: #fff;
+    border-right: #fff;
+    border-left: #fff;
+    border-bottom: #fff;
+    right: -40px;
+    content: '';
+    top: 50%;
+    transform: translateY(-50%);
+    transform: rotate(45%);
+    position: absolute;
+}
+.questionleft2{
+    order: 2;
+}
+.questionleft3{
+    order: 3;
+}
+.questionleft4{
+    order: 4;
+}
+@media not all and (min-width: 640px) {
+    .questionleft1::after{
+        right: -20px;
+        margin-right: 30px;
+    }
+}
+.doctor .swiper-pagination{
+    bottom: 0;
+}
